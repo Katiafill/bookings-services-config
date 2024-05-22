@@ -15,5 +15,9 @@ spring:
     url: jdbc:postgresql://localhost:5432/demo
     username: postgres
     password: postgres
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
