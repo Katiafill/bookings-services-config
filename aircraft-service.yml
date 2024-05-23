@@ -10,7 +10,14 @@ spring:
     driver-class-name: org.postgresql.Driver
     platform: postgres
     url: jdbc:postgresql://localhost:5432/demo
-
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka
 management:
   endpoints:
     web:
