@@ -6,9 +6,6 @@ spring:
     database: POSTGRESQL
     show-sql: true
     open-in-view: false
-    properties:
-      hibernate:
-        default_schema: bookings
 
   datasource:
     driver-class-name: org.postgresql.Driver
