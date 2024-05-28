@@ -32,3 +32,4 @@ management:
       exposure:
         include: "*"
     enabled-by-default: true
+
