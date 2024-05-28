@@ -12,6 +12,11 @@ spring:
     platform: postgres
     url: jdbc:postgresql://${DATABASE_SERVER:localhost:5432/demo}
 
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+
 eureka:
   instance:
     preferIpAddress: true
@@ -20,6 +25,8 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: ${EUREKA_SERVER:http://localhost:8070/eureka}
+
+
 
 management:
   endpoints:
