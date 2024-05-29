@@ -14,6 +14,9 @@ spring:
       discovery.locator:
         enabled: true
         lowerCaseServiceId: true
+    loadbalancer:
+      ribbon:
+        enabled: false
 
 management:
   endpoints:
