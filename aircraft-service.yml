@@ -26,7 +26,12 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_SERVER:http://localhost:8070/eureka}
 
-
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://keycloak:8080/realms/bookings-realm
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
 
 management:
   endpoints:
@@ -43,4 +48,9 @@ keycloak:
   ssl-required: external
   use-resource-role-mappings: true
   bearer-only: true
+
+token:
+  converter:
+    principal-attribute: preferred_username
+    resource-id: bookings
 
