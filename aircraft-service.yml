@@ -37,9 +37,10 @@ management:
 
 keycloak:
   realm: bookings-realm
-  auth-server-url: http://keycloak:8080/realms
+  auth-server-url: http://keycloak:8080
   resource: bookings
   credentials.secret: oIJWEXdysUxUAhGmdnNoFseum78PDSll
   ssl-required: external
   use-resource-role-mappings: true
   bearer-only: true
+
