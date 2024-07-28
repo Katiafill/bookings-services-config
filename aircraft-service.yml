@@ -18,18 +18,6 @@ spring:
         enabled: false
   security:
     oauth2:
-      client:
-        registration:
-          keycloak:
-            client-id: bookings
-            client-secret: oIJWEXdysUxUAhGmdnNoFseum78PDSll
-        provider:
-          keycloak:
-            issuer-uri: http://keycloak:8080/realms/bookings-realm
-            token-uri: ${spring.security.oauth2.client.provider.keycloak.issuer-uri}/protocol/openid-connect/token
-            authorization-uri: ${spring.security.oauth2.client.provider.keycloak.issuer-uri}/protocol/openid-connect/auth
-            user-info-uri: ${spring.security.oauth2.client.provider.keycloak.issuer-uri}/protocol/openid-connect/userinfo
-            jwk-set-uri: ${spring.security.oauth2.client.provider.keycloak.issuer-uri}/protocol/openid-connect/certs
       resourceserver:
         jwt:
           issuer-uri: http://keycloak:8080/realms/bookings-realm
