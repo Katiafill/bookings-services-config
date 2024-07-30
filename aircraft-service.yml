@@ -24,7 +24,7 @@ spring:
           jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
 
 jwt:
-  claimResourceAccess: resource-access
+  claimResourceAccess: resource_access
   claimRealmName: bookings
   claimRoles: roles
   prefixRole: ROLE_
