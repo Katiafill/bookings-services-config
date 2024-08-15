@@ -29,6 +29,11 @@ jwt:
   claimRoles: roles
   prefixRole: ROLE_
 
+feign:
+  oauth2:
+    enabled: true
+    clientRegistrationId: bookings
+
 eureka:
   instance:
     preferIpAddress: true
