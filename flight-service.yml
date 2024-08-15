@@ -16,6 +16,9 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
+    openfeign:
+       oauth2:
+         enabled: true
   security:
     oauth2:
       resourceserver:
@@ -28,11 +31,6 @@ jwt:
   claimRealmName: bookings
   claimRoles: roles
   prefixRole: ROLE_
-
-feign:
-  oauth2:
-    enabled: true
-    clientRegistrationId: bookings
 
 eureka:
   instance:
